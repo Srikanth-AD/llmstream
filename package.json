@@ -1,0 +1,40 @@
+{
+  "name": "llmstream",
+  "version": "0.1.0",
+  "description": "Tiny zero-dependency library that parses LLM streaming responses into a clean normalized async iterator.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "llm",
+    "streaming",
+    "sse",
+    "openai",
+    "anthropic",
+    "gemini",
+    "ollama",
+    "async-iterator"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
