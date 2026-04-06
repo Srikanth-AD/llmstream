@@ -102,6 +102,37 @@ iterator so the rest of your code can stay provider-agnostic.
 - **Strict TypeScript** — discriminated unions throughout.
 - **Crash-resistant** — errors are events, not exceptions.
 
+## Running the examples
+
+The `examples/` folder ships three runnable demos. Build first so `dist/`
+exists:
+
+```bash
+npm install
+npm run build
+```
+
+**Provider-specific scripts:**
+
+```bash
+OPENAI_API_KEY=sk-...     node examples/openai-example.js
+ANTHROPIC_API_KEY=sk-...  node examples/anthropic-example.js
+```
+
+**Unified CLI demo** — works with all four providers:
+
+```bash
+OPENAI_API_KEY=sk-...     node examples/cli-demo.js openai     "Write a haiku about streams"
+ANTHROPIC_API_KEY=sk-...  node examples/cli-demo.js anthropic  "Explain SSE in one sentence"
+GOOGLE_API_KEY=...        node examples/cli-demo.js google     "What is async iteration?"
+                          node examples/cli-demo.js ollama     "Tell me a joke"
+```
+
+The CLI demo prints text deltas inline, surfaces tool calls, usage, and
+finish reason, and reports time-to-first-byte / total streaming time —
+useful for sanity-checking that your normalized iterator is doing what
+you expect against a live endpoint.
+
 ## License
 
 MIT
