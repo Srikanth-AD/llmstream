@@ -32,6 +32,17 @@
     "async-iterator"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Srikanth-AD/llmstream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Srikanth-AD/llmstream/issues"
+  },
+  "homepage": "https://github.com/Srikanth-AD/llmstream#readme",
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "tsx": "^4.19.0",
     "typescript": "^5.6.0",
