@@ -1,4 +1,4 @@
-import type { SSEEvent } from './types'
+import type { SSEEvent } from './types.js'
 
 /**
  * A yielded item from parseSSEStream: either a successfully parsed SSE event

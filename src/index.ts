@@ -1,12 +1,12 @@
-import { parseSSEStream, parseNDJSONStream } from './parser'
-import { openaiAdapter } from './providers/openai'
-import { anthropicAdapter } from './providers/anthropic'
-import { googleAdapter } from './providers/google'
-import { ollamaAdapter } from './providers/ollama'
-import type { LLMEvent, StreamOptions, Provider } from './types'
+import { parseSSEStream, parseNDJSONStream } from './parser.js'
+import { openaiAdapter } from './providers/openai.js'
+import { anthropicAdapter } from './providers/anthropic.js'
+import { googleAdapter } from './providers/google.js'
+import { ollamaAdapter } from './providers/ollama.js'
+import type { LLMEvent, StreamOptions, Provider } from './types.js'
 
-export type { LLMEvent, StreamOptions, Provider } from './types'
-export { parseSSEStream, parseNDJSONStream } from './parser'
+export type { LLMEvent, StreamOptions, Provider } from './types.js'
+export { parseSSEStream, parseNDJSONStream } from './parser.js'
 
 /**
  * Stream and normalize an LLM HTTP response into a uniform async iterator of

@@ -1,4 +1,4 @@
-import type { LLMEvent, SSEEvent } from '../types'
+import type { LLMEvent, SSEEvent } from '../types.js'
 
 type OllamaChunk = {
   model?: string

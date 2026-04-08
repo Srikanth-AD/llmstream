@@ -1,6 +1,6 @@
 {
   "name": "llmstream",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tiny zero-dependency library that parses LLM streaming responses into a clean normalized async iterator.",
   "type": "module",
   "main": "./dist/index.js",
